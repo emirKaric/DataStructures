@@ -54,7 +54,7 @@ void testLista(Lista<T>* podaci) {
 
 int main()
 {	
-	//testLista(new ListaSek<int>());
+	testLista(new ListaSek<int>());
 	testLista(new ListaPov<int>());
 
 	return 0;

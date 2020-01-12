@@ -16,7 +16,7 @@ public:
 	}
 	void dodaj_na_kraj(const T& x) {
 		if (jel_prazna()) {
-			dodaj_na_pocetak(info);		
+			dodaj_na_pocetak(x);		
 			return;
 		}
 		Cvor<T>* temp = prvi;
