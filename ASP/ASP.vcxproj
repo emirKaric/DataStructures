@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -126,12 +126,15 @@
     <ClCompile Include="ListaSek.h" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Osoba.cpp" />
+    <ClCompile Include="StackPov.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cvor.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="ListaPov.h" />
     <ClInclude Include="Osoba.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="StackSek.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

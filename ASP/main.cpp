@@ -3,6 +3,9 @@
 #include "ListaPov.h"
 #include "ListaSek.h"
 #include "Cvor.h"
+#include "Stack.h"
+#include "StackPov.h"
+#include "StackSek.h"
 using namespace std;
 
 template <class T>
@@ -51,11 +54,51 @@ void testLista(Lista<T>* podaci) {
 	} while (unos != 7);
 }
 
+template<class T>
+void testStack(Stack<T>* podaci) {
+	int unos;
+	do
+	{
+		int broj;
+		cout << "1. Dodaj" << "\n";
+		cout << "2. Ukloni" << "\n";
+		cout << "3. Print" << "\n";
+		cout << "4. Sve ukloni" << "\n";
+		cout << "5. Exit" << "\n";
+		cout << "Unesite: ";
+		cin >> unos;
+		int end = podaci->getSize();
+		switch (unos)
+		{
+		case 1:
+			cout << "Unesite broj: \n";
+			cin >> broj;
+			podaci->push(broj);
+			break;
+		case 2:
+			podaci->pop();
+			break;
+		case 3:
+			for (int i = 0; i < end; i++)
+				cout << (*podaci)[i] << "|";
+			cout << "\n";
+			break;
+		case 4:
+			for (int i = 0; i < end; i++)
+				podaci->pop();
+			break;
+		}
+	} while (unos != 5);
+}
 
 int main()
 {	
-	testLista(new ListaSek<int>());
-	testLista(new ListaPov<int>());
+	//testLista(new ListaSek<int>());
+	//testLista(new ListaPov<int>());
 
+	//testStack(new StackSek<int>());
+	testStack(new StackPov<int>());
+
+		
 	return 0;
 }

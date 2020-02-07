@@ -24,6 +24,9 @@
     <ClCompile Include="ListaSek.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="StackPov.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cvor.h">
@@ -36,6 +39,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Lista.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StackSek.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
