@@ -47,5 +47,14 @@
     <ClInclude Include="StackSek.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Red.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RedPov.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RedSek.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
