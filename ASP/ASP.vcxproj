@@ -133,6 +133,9 @@
     <ClInclude Include="Lista.h" />
     <ClInclude Include="ListaPov.h" />
     <ClInclude Include="Osoba.h" />
+    <ClInclude Include="PrioritetniRed.h" />
+    <ClInclude Include="PrioritetniRedPov.h" />
+    <ClInclude Include="PrioritetniRedSek.h" />
     <ClInclude Include="Red.h" />
     <ClInclude Include="RedPov.h" />
     <ClInclude Include="RedSek.h" />

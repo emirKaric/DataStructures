@@ -9,6 +9,9 @@
 #include "Red.h"
 #include "RedPov.h"
 #include "RedSek.h"
+#include "PrioritetniRed.h"
+#include "PrioritetniRedPov.h"
+#include "PrioritetniRedSek.h"
 using namespace std;
 
 template <class T>
@@ -131,6 +134,43 @@ void testRed(Red<T>* podaci) {
 	} while (unos != 5);
 }
 
+template<class T>
+void testPrioritetniRed(PrioritentiRed<T>* podaci) {
+	int unos;
+	do
+	{
+		int broj;
+		cout << "1. Dodaj" << "\n";
+		cout << "2. Ukloni" << "\n";
+		cout << "3. Print" << "\n";
+		cout << "4. Sve ukloni" << "\n";
+		cout << "5. Exit" << "\n";
+		cout << "Unesite: ";
+		cin >> unos;
+		int end = podaci->getSize();
+		switch (unos)
+		{
+		case 1:
+			cout << "Unesite broj: \n";
+			cin >> broj;
+			podaci->addElement(broj);
+			break;
+		case 2:
+			podaci->removeElement();
+			break;
+		case 3:
+			for (int i = 0; i < end; i++)
+				cout << (*podaci)[i] << "|";
+			cout << "\n";
+			break;
+		case 4:
+			for (int i = 0; i < end; i++)
+				podaci->removeElement();
+			break;
+		}
+	} while (unos != 5);
+}
+
 int main()
 {	
 	//testLista(new ListaSek<int>());
@@ -139,7 +179,9 @@ int main()
 	//testStack(new StackSek<int>());
 	//testStack(new StackPov<int>());
 	//testRed(new RedSek<int>());
-	testRed(new RedPov<int>());
+	//testRed(new RedPov<int>());
+	//testPrioritetniRed(new PrioritetniRedSek<int>());
+	//testPrioritetniRed(new PrioritetniRedPov<int>());
 
 	return 0;
 }

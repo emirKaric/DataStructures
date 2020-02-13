@@ -56,5 +56,14 @@
     <ClInclude Include="RedSek.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PrioritetniRed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrioritetniRedSek.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PrioritetniRedPov.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
